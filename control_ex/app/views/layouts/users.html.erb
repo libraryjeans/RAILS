@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :title %></title><!--incoming title from view-->
+  <%= stylesheet_link_tag    "users", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "users", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<title><%= yield :title %></title> <!--from layouts-->
+<%= yield %> <!--the yeild is the view file-->
+
+</body>
+</html>

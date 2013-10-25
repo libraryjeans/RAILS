@@ -1,0 +1,9 @@
+<% content_for :title do %>Title for new Post<% end %>
+<h1>Add a new post</h1>
+<form action="/posts" method="POST">
+	 <!--form helper adds token automatically - otherwise, use this hidden input to create a token-->
+	<input name="authenticity_token" type="hidden" value="token_value">
+	<textarea name="post-text"></textarea>
+	<input type="submit" value="Post"/>
+</form>
+<p>Find me in app/views/posts/new.html.erb</p>

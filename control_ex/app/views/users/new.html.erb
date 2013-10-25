@@ -1,0 +1,12 @@
+<% content_for :title do %>Title for New User<% end %>
+<h1>Add a new user</h1>
+<form action="/users" method="POST">
+	<input name="authenticity_token" type="hidden" value="token_value"> <!--form helper adds token automatically-->	
+	<input type="text" name="first_name" placeholder="First name"/>
+	<input type="text" name="last_name" placeholder="Last name"/>
+	<input type="text" name="email" placeholder="Email"/>
+	<input type="text" name="password" placeholder="Password"/>
+	<input type="submit" value="Register"/>
+</form>
+
+<p>Find me in app/views/users/new.html.erb</p>
